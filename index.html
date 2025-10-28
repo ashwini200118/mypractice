@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample Web Form</title>
+</head>
+<body>
+
+  <!-- add a top anchor to allow "back to top" links -->
+  <a id="top"></a>
+
+  <!-- Navigation Menu -->
+  <nav>
+    <!-- internal anchors -->
+    <a href="#home">Home</a> |
+    <a href="#form">Form</a> |
+    <a href="#contact">Contact</a> |
+    <!-- relative link to another page in the same folder -->
+    <a href="about.html">About (relative)</a> |
+    <!-- external link opens in new tab and uses rel for security -->
+    <a href="https://developer.mozilla.org/" target="_blank" rel="noopener noreferrer">MDN Docs (external)</a> |
+    <!-- download link (file should be placed in same folder, e.g. brochure.pdf) -->
+    <a href="brochure.pdf" download>Download Brochure</a>
+  </nav>
+
+  <!-- Home section (internal anchor target) -->
+  <section id="home">
+    <h1>Welcome</h1>
+    <p>Quick links: <a href="#form">Go to Registration Form</a> · <a href="#contact">Contact Us</a></p>
+  </section>
+
+  <h1 id="form">User Registration Form</h1>
+
+  <!-- Form Section -->
+  <form action="#" method="post">
+    <!-- Text Input -->
+    <label for="username">Username:</label><br>
+    <input type="text" id="username" name="username" required><br><br>
+
+    <!-- Password Input -->
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" required><br><br>
+
+    <!-- Email Input -->
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <!-- Textarea -->
+    <label for="address">Address:</label><br>
+    <textarea id="address" name="address" rows="4" cols="30" placeholder="Enter your full address"></textarea><br><br>
+
+    <!-- In-page jump link example: link to the address field -->
+    <p><a href="#address">Jump to Address field</a></p>
+
+    <!-- Radio Buttons -->
+    <p>Gender:</p>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br>
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">Other</label><br><br>
+
+    <!-- Checkboxes -->
+    <p>Languages Known:</p>
+    <input type="checkbox" id="english" name="languages" value="English">
+    <label for="english">English</label><br>
+    <input type="checkbox" id="kannada" name="languages" value="Kannada">
+    <label for="kannada">Kannada</label><br>
+    <input type="checkbox" id="hindi" name="languages" value="Hindi">
+    <label for="hindi">Hindi</label><br><br>
+
+    <!-- Dropdown -->
+    <label for="country">Country:</label><br>
+    <select id="country" name="country">
+      <option value="">--Select--</option>
+      <option value="india">India</option>
+      <option value="usa">USA</option>
+      <option value="uk">UK</option>
+      <option value="canada">Canada</option>
+    </select><br><br>
+
+    <!-- Submit and Reset Buttons -->
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+  </form>
+
+  <!-- Contact section (internal anchor target) -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+    <p>Phone: <a href="tel:+1234567890">+1 234 567 890</a></p>
+    <p>External resources: <a href="https://www.w3.org/" target="_blank" rel="noopener noreferrer">W3C</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 MyWebsite | Contact: info@example.com</p>
+    <!-- back to top -->
+    <p><a href="#top">Back to Top</a></p>
+  </footer>
+
+</body>
+</html>
